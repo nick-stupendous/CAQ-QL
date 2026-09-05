@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Prevent dragging/selection on everything */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -19,11 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', monospace;
-    /* Prevent text selection on body */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    overflow: hidden;
 }
 
 h1 {
@@ -35,13 +30,10 @@ h1 {
     animation: titlePulse 3s infinite;
     letter-spacing: 5px;
     margin-bottom: 5px;
-    /* Prevent dragging */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-user-drag: none;
-    user-drag: none;
 }
 
 h2 {
@@ -96,18 +88,12 @@ canvas {
     margin-top: 20px;
     background-color: #000000;
     border: none;
-    /* Prevent dragging on canvas */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
     user-drag: none;
-    pointer-events: none; /* Optional: prevents canvas interaction if needed */
-}
-
-/* Only allow pointer events on canvas if needed for game controls */
-canvas {
     pointer-events: auto;
 }
 
@@ -126,8 +112,6 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-user-drag: none;
-    user-drag: none;
 }
 
 a:hover {
@@ -142,9 +126,8 @@ button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-user-drag: none;
-    user-drag: none;
     cursor: pointer;
+    font-family: 'Courier New', monospace;
 }
 
 button:hover {
@@ -175,7 +158,6 @@ button:hover {
     66% { box-shadow: 0 0 40px #00ffff, 0 0 80px #00ffff; }
 }
 
-/* Credits Section */
 .credits {
     text-align: center;
     margin-top: 20px;
@@ -190,6 +172,4 @@ button:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-user-drag: none;
-    user-drag: none;
 }

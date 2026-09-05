@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Cista Di Archetypon Quadro-Quatri Lineae</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <h1>CAQ-QL</h1>
+        <h2 style="color:#00ff41; text-shadow:0 0 10px #00ff41,0 0 20px #00ff41; font-family:'Courier New',monospace; font-size:18px; margin-top:-5px; letter-spacing:8px; animation:subtitlePulse 4s infinite;">
+            Quadro-Quatri Lineae
+        </h2>
+        
+        <!-- Audio Elements -->
+        <audio id="originalTheme" loop preload="auto">
+            <source src="songs/original-theme-lemeshev.flac" type="audio/flac">
+        </audio>
+        <audio id="tchaikovskyAllegro" loop preload="auto">
+            <source src="songs/tchaikovsky-allegro-moderato.flac" type="audio/flac">
+        </audio>
+        <audio id="nutcrackerTheme" loop preload="auto">
+            <source src="songs/nutcracker-theme.flac" type="audio/flac">
+        </audio>
+        <audio id="gameOverSong" preload="auto">
+            <source src="songs/chopin-sonata-2(game-over).flac" type="audio/flac">
+        </audio>
+        
+        <canvas id="tetris" width="200" height="400"></canvas>
+        
+        <div>
+            SCORE : <div id="score">0</div>
+        </div>
+        
+        <!-- Music Controls -->
+        <div style="text-align: center; margin-top: 10px;">
+            <button id="playKorobeinikiBtn" style="background:#00ff41; color:#000000; border:2px solid #00ff41; padding:10px 24px; font-family:'Courier New',monospace; font-size:16px; font-weight:bold; cursor:pointer; box-shadow:0 0 20px #00ff41; transition:all 0.3s; margin:5px;">
+                ORIGINAL THEME
+            </button>
+            <button onclick="playTchaikovskyAllegro()" style="background:#0a0a0a; color:#ffaa00; border:2px solid #ffaa00; padding:8px 16px; font-family:'Courier New',monospace; cursor:pointer; box-shadow:0 0 10px #ffaa00; margin:5px;">
+                Tchaikovsky - Allegro Moderato
+            </button>
+            <button onclick="playNutcrackerTheme()" style="background:#0a0a0a; color:#ff00de; border:2px solid #ff00de; padding:8px 16px; font-family:'Courier New',monospace; cursor:pointer; box-shadow:0 0 10px #ff00de; margin:5px;">
+                Nutcracker Theme
+            </button>
+            <button onclick="stopMusic()" style="background:#0a0a0a; color:#ff0040; border:2px solid #ff0040; padding:8px 16px; font-family:'Courier New',monospace; cursor:pointer; box-shadow:0 0 10px #ff0040; margin:5px;">
+                STOP
+            </button>
+            <button onclick="toggleMusic()" style="background:#0a0a0a; color:#00ffff; border:2px solid #00ffff; padding:8px 16px; font-family:'Courier New',monospace; cursor:pointer; box-shadow:0 0 10px #00ffff; margin:5px;">
+                TOGGLE
+            </button>
+        </div>
+        
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="index.html">RESTART</a>
+        </div>
+        
+        <!-- CREDITS SECTION -->
+        <div class="credits">
+            <p style="margin: 5px 0; font-weight: bold; font-size: 14px;">
+                Soundtrack Credits
+            </p>
+            <p style="margin: 3px 0; font-size: 11px;">
+                <strong>Original Theme</strong> — "Korobeiniki" (The Peddlers) · Traditional Russian Folk Song · Public Domain
+                <br>Performed by S. Lemeshev · Based on Nekrasov's poem (1861)
+            </p>
+            <p style="margin: 3px 0; font-size: 11px;">
+                <strong>Tchaikovsky - Allegro Moderato</strong> · Pyotr Ilyich Tchaikovsky · Public Domain
+                <br>From Violin Concerto in D major, Op. 35
+            </p>
+            <p style="margin: 3px 0; font-size: 11px;">
+                <strong>Nutcracker Theme</strong> · Pyotr Ilyich Tchaikovsky · Public Domain
+                <br>From "The Nutcracker" Ballet, Op. 71 · "Dance of the Sugar Plum Fairy"
+            </p>
+            <p style="margin: 3px 0; font-size: 11px;">
+                <strong>Game Over Theme</strong> · Frédéric Chopin · Public Domain
+                <br>From Piano Sonata No. 2 in B-flat minor, Op. 35 · "Marche Funèbre"
+            </p>
+            <p style="margin: 5px 0; font-size: 10px; opacity: 0.6;">
+                All compositions are in the Public Domain. Performances from archival recordings.
+                <br>Game licensed under MIT License · 2026 nick-stupendous
+            </p>
+        </div>
+        
+        <script src="quadri-quatrilineaes.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

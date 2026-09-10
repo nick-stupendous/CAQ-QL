@@ -1,7 +1,7 @@
 # CAQ-QL
 Cista Di Archetypon Quadro-Quatri Lineae, inspired by FOSS-Cell-GECPKD's tetris and llop's classic-tetris-js. Enjoy
 
-🎵 Soundtrack Credits
+Soundtrack Credits
 
 All music used in this game is in the **Public Domain**:
 
@@ -14,7 +14,7 @@ All music used in this game is in the **Public Domain**:
 
 All compositions are in the **Public Domain** under international copyright law. Performances are sourced from archival recordings.
 
-## 📝 License
+## License
 
 This game is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 

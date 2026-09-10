@@ -7,10 +7,10 @@ All music used in this game is in the **Public Domain**:
 
 | Song | Composer | Source | Public Domain |
 |------|----------|--------|---------------|
-| **Original Theme** | Traditional Russian Folk | "Korobeiniki" (The Peddlers) · Performed by S. Lemeshev | ✅ Yes |
-| **Tchaikovsky - Allegro Moderato** | Pyotr Ilyich Tchaikovsky | Violin Concerto in D major, Op. 35 | ✅ Yes |
-| **Nutcracker Theme** | Pyotr Ilyich Tchaikovsky | "The Nutcracker" Ballet, Op. 71 · "Dance of the Sugar Plum Fairy" | ✅ Yes |
-| **Game Over Theme** | Frédéric Chopin | Piano Sonata No. 2, Op. 35 · "Marche Funèbre" | ✅ Yes |
+| **Original Theme** | Traditional Russian Folk | "Korobeiniki" (The Peddlers) · Performed by S. Lemeshev |  Yes |
+| **Tchaikovsky - Allegro Moderato** | Pyotr Ilyich Tchaikovsky | Violin Concerto in D major, Op. 35 |  Yes |
+| **Nutcracker Theme** | Pyotr Ilyich Tchaikovsky | "The Nutcracker" Ballet, Op. 71 · "Dance of the Sugar Plum Fairy" |  Yes |
+| **Game Over Theme** | Frédéric Chopin | Piano Sonata No. 2, Op. 35 · "Marche Funèbre" |  Yes |
 
 All compositions are in the **Public Domain** under international copyright law. Performances are sourced from archival recordings.
 
